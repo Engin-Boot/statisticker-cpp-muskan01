@@ -1,5 +1,4 @@
 #include "stats.h"
-#include <cfloat>
 #include <limits>
 using namespace Statistics;
 
