@@ -9,15 +9,15 @@ namespace Statistics {
         public :
         void set_avg(double avg)
         {
-            this.average = avg;
+            this->average = avg;
         }
         void set_min (double min)
         {
-            this.min = min;
+            this->min = min;
         }
         void set_max(double max)
         {
-            this.max = max;
+            this->max = max;
         }
     };
     
