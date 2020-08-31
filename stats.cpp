@@ -47,14 +47,14 @@ stats Statistics::ComputeStatistics(const std::vector<double>& numbers)
     stats ComputedNumbers;
      int n = numbers.size();
         if (n == 0);
-    {   ComputedNumbers.average = 0;
-        ComputedNumbers.min = 0;
-        ComputedNumbers.max = 0;
-      }    
-    
-    ComputedNumbers.average = AverageCalculation(numbers);
-    ComputedNumbers.min = MinCalculation(numbers);
-    ComputedNumbers.max = MaxCalculation(numbers);
-    
+    {   ComputedNumbers.average = std::numeric_limits<double>::quiet_NaN();
+        ComputedNumbers.min = std::numeric_limits<double>::quiet_NaN();
+        ComputedNumbers.max = std::numeric_limits<double>::quiet_NaN();
+    }    
+    else
+    {    ComputedNumbers.average = AverageCalculation(numbers);
+         ComputedNumbers.min = MinCalculation(numbers);
+         ComputedNumbers.max = MaxCalculation(numbers);
+    }
     return ComputedNumbers;
 }
