@@ -20,7 +20,7 @@ double MinCalculation(const std::vector<double>& numbers)
     for(int i=0; i<numbers.size(); i++)
     {
         if (numbers[i] < min)
-        { min = values[i];
+        { min = numbers[i];
         }
     }
     return min;
@@ -29,10 +29,11 @@ double MinCalculation(const std::vector<double>& numbers)
 double MaxCalculation(const std::vector<double>& numbers)
 { 
     double max = numbers[0]
-    for(int i=0; i<numbers.size(); i++)
+        int n = numbers.size();
+    for(int i=0; i<n; i++)
     {
         if (numbers[i] > max)
-        { max = values[i];
+        { max = numbers[i];
         }
     }
     return max;
