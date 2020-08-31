@@ -21,5 +21,5 @@ namespace Statistics {
         }
     };
     
-    Stats ComputeStatistics(const std::vector<double>& );
+    stats ComputeStatistics(const std::vector<double>& );
 }
