@@ -42,9 +42,9 @@ stats Statistics::ComputeStatistics(const std::vector<double>& numbers)
 {
     //Implement statistics here
     Stats ComputedNumbers;
-    ComputedNumbers.set_avg(AverageCalculation(numbers));
-    ComputedNumbers.set_min(MinCalculation(numbers));
-    ComputedNumbers.set_max(MaxCalculation(numbers));
+    ComputedNumbers.average = AverageCalculation(numbers);
+    ComputedNumbers.min = MinCalculation(numbers);
+    ComputedNumbers.max = MaxCalculation(numbers);
     
     return ComputedNumbers;
 }
