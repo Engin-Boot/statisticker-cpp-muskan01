@@ -46,7 +46,7 @@ stats Statistics::ComputeStatistics(const std::vector<double>& numbers)
     //Implement statistics here
     stats ComputedNumbers;
      int n = numbers.size();
-        if (n == 0);
+        if (n == 0)
     {   ComputedNumbers.average = std::numeric_limits<double>::quiet_NaN();
         ComputedNumbers.min = std::numeric_limits<double>::quiet_NaN();
         ComputedNumbers.max = std::numeric_limits<double>::quiet_NaN();
