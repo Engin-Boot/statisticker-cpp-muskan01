@@ -6,7 +6,7 @@ using namespace Statistics;
 double AverageCalculation (const std::vector<double>& numbers)
 { 
     double avg = 0;
-    for(int i=0; i<numbers.size; i++)
+    for(int i=0; i<numbers.size(); i++)
     {
         avg = avg + numbers[i];
     }
@@ -38,7 +38,7 @@ double MaxCalculation(const std::vector<double>& numbers)
     return max;
 }
 
-Stats Statistics::ComputeStatistics(const std::vector<double>& numbers)
+stats Statistics::ComputeStatistics(const std::vector<double>& numbers)
 {
     //Implement statistics here
     Stats ComputedNumbers;
