@@ -45,7 +45,7 @@ stats Statistics::ComputeStatistics(const std::vector<double>& numbers)
 {
     //Implement statistics here
     stats ComputedNumbers;
-     int n = numbers.size()
+     int n = numbers.size();
         if (n == 0);
     {   ComputedNumbers.average = 0;
         ComputedNumbers.min = 0;
